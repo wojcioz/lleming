@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./flask_backend
+    ports:
+      - 5000:5000
+  frontend:
+    build: ./vue_frontend
+    ports:
+      - 8080:8080
